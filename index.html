@@ -1,10 +1,9 @@
 <!DOCTYPE html><html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Imperium Core | Bot de Discord</title><meta name="description" content="Imperium Core es un bot de Discord con sistemas de economía, moderación, bienvenida y entretenimiento.">
-<meta property="og:title" content="Imperium Core© Bot">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Imperium Core | Bot de Discord</title><meta name="description" content="Imperium Core es un bot de Discord con economía, moderación, bienvenida y entretenimiento."><meta property="og:title" content="Imperium Core | Discord Bot">
 <meta property="og:description" content="Economía, moderación, bienvenida y entretenimiento para Discord.">
-<meta property="og:type" content="website"><style>
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://GBRL-BD.github.io/imperium-core/logo.png"><link rel="icon" type="image/png" href="logo.png"><style>
 
 *{
 margin:0;
@@ -14,27 +13,46 @@ box-sizing:border-box;
 
 body{
 font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
-background:#0f172a;
-color:#e2e8f0;
+background:#0d0d0d;
+color:#f5f5f5;
 line-height:1.7;
 }
 
 header{
-background:linear-gradient(135deg,#4f46e5,#7c3aed);
+background:linear-gradient(135deg,#111111,#1c1c1c);
 padding:80px 20px;
 text-align:center;
+border-bottom:2px solid #d4af37;
+}
+
+.logo{
+width:180px;
+max-width:90%;
+margin-bottom:20px;
+filter:drop-shadow(0 0 15px rgba(212,175,55,.4));
 }
 
 header h1{
-font-size:3.5rem;
+font-size:3rem;
+color:#d4af37;
 margin-bottom:10px;
 }
 
-header p{
-font-size:1.2rem;
-opacity:.95;
-max-width:700px;
+.badge{
+display:inline-block;
+background:#d4af37;
+color:#000;
+padding:8px 18px;
+border-radius:999px;
+font-weight:bold;
+margin-bottom:20px;
+}
+
+.subtitle{
+max-width:800px;
 margin:auto;
+font-size:1.1rem;
+color:#d8d8d8;
 }
 
 .buttons{
@@ -43,7 +61,7 @@ margin-top:30px;
 
 .btn{
 display:inline-block;
-padding:14px 28px;
+padding:14px 24px;
 margin:8px;
 border-radius:12px;
 text-decoration:none;
@@ -52,53 +70,75 @@ transition:.3s;
 }
 
 .btn-primary{
-background:#ffffff;
-color:#4f46e5;
-}
-
-.btn-primary:hover{
-transform:translateY(-2px);
+background:#d4af37;
+color:#000;
 }
 
 .btn-secondary{
-background:#1e293b;
-color:white;
+background:#222;
+color:#fff;
+border:1px solid #444;
+}
+
+.btn:hover{
+transform:translateY(-3px);
 }
 
 .container{
-max-width:1100px;
+max-width:1200px;
 margin:auto;
 padding:50px 20px;
 }
 
 .card{
-background:#1e293b;
+background:#181818;
 padding:30px;
 border-radius:18px;
 margin-bottom:30px;
-box-shadow:0 0 20px rgba(0,0,0,.25);
+border:1px solid #2c2c2c;
+transition:.3s;
+}
+
+.card:hover{
+border-color:#d4af37;
 }
 
 h2{
-color:#a5b4fc;
+color:#d4af37;
 margin-bottom:20px;
 }
 
 .feature-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:20px;
 }
 
 .feature{
-background:#0f172a;
+background:#111;
 padding:20px;
 border-radius:14px;
+border:1px solid #2d2d2d;
 }
 
 .feature h3{
-color:#c4b5fd;
+color:#d4af37;
 margin-bottom:10px;
+}
+
+.status{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.status-box{
+background:#111;
+padding:15px;
+border-radius:12px;
+border:1px solid #2d2d2d;
+flex:1;
+min-width:200px;
 }
 
 ul{
@@ -106,132 +146,118 @@ padding-left:20px;
 }
 
 a{
-color:#a5b4fc;
+color:#d4af37;
 }
 
 footer{
-padding:40px;
 text-align:center;
-color:#94a3b8;
-border-top:1px solid #334155;
-margin-top:40px;
+padding:50px 20px;
+border-top:1px solid #333;
+color:#bdbdbd;
+}
+
+footer p{
+margin-bottom:10px;
 }
 
 small{
-color:#94a3b8;
+color:#888;
 }
 
-</style></head><body><header><h1>Imperium Core</h1><p>
-Bot de Discord diseñado para ofrecer sistemas de economía,
-moderación, bienvenida y entretenimiento en una sola solución.
+</style></head>
+<body><header><img src="logo.png" alt="Imperium Core Logo" class="logo"><h1>Imperium Core</h1><div class="badge">
+👑 Sistema Premium para Comunidades de Discord
+</div><p class="subtitle">
+El núcleo de tu comunidad. Economía, moderación, bienvenida y entretenimiento en una sola solución.
 </p><div class="buttons"><a href="https://discord.com/oauth2/authorize?client_id=1510891163798863922&scope=bot&permissions=8"
 target="_blank"
 class="btn btn-primary">
 🚀 Añadir a Discord
-</a><a href="mailto:soporteimperiumcorebot@gmail.com" class="btn btn-secondary">
-✉️ Contactar Soporte | Gmail
-</a><a href="https://discord.gg/WNWpvUFYht"
+</a>
+
+<a href="https://discord.gg/WNWpvUFYht"
 target="_blank"
 class="btn btn-secondary">
-💬 Servidor de Soporte | Discord
+💬 Servidor de Soporte
 </a>
-</div></header><div class="container"><div class="card"><h2>Características</h2><div class="feature-grid"><div class="feature">
-<h3>Economía</h3>
-<p>Sistema de monedas, recompensas, rankings y progresión de usuarios.</p>
-</div><div class="feature">
-<h3>Moderación</h3>
-<p>Herramientas para mantener el orden y la seguridad del servidor.</p>
-</div><div class="feature">
-<h3>Bienvenida</h3>
-<p>Mensajes automáticos para nuevos miembros y configuraciones personalizadas.</p>
-</div><div class="feature">
-<h3>Entretenimiento</h3>
-<p>Funciones diseñadas para aumentar la interacción y diversión de la comunidad.</p>
-</p><br><p>
+
+<a href="mailto:soporteimperiumcorebot@gmail.com"
+class="btn btn-secondary">
+✉️ Contactar Soporte
 </a>
+
+</div></header><div class="container"><div class="card"><h2>Estado del Proyecto</h2><div class="status"><div class="status-box">
+<strong>Estado:</strong><br>
+🟢 Operativo
+</div><div class="status-box">
+<strong>Acceso:</strong><br>
+🌎 Público
+</div><div class="status-box">
+<strong>Versión:</strong><br>
+🚀 1.0
+</div></div></div><div class="card"><h2>Características</h2><div class="feature-grid"><div class="feature">
+<h3>💰 Economía</h3>
+<p>Sistema de monedas, recompensas, rankings y progresión.</p>
+</div><div class="feature">
+<h3>🛡️ Moderación</h3>
+<p>Herramientas para mantener el orden y la seguridad.</p>
+</div><div class="feature">
+<h3>👋 Bienvenida</h3>
+<p>Mensajes automáticos y configuraciones personalizadas.</p>
+</div><div class="feature">
+<h3>🎮 Entretenimiento</h3>
+<p>Funciones para aumentar la interacción de la comunidad.</p>
 </div></div></div><div class="card"><h2>Soporte</h2><p>
-Si necesitas ayuda, deseas reportar un error o solicitar la eliminación
-de datos almacenados por el bot, puedes contactarnos mediante:
-</p><div class="buttons"><a href= "mailto:soporteimperiumcorebot@gmail.com"
-target="_blank"
-class="btn btn-primary">
-✉️ | Gmail
-</a><a href="https://discord.gg/Wnwpvufyht"
-target="_blank"
-class="btn btn-secondary">
-🏛️ | Discord
-</p><p>
-</p></div><div class="card"><h2>Términos de Servicio</h2><p><strong>Última actualización:</strong> 9 de junio de 2026</p><br><h3>1. Uso del Servicio</h3><p>
-Imperium Core proporciona herramientas de economía, moderación,
-bienvenida y entretenimiento para servidores de Discord.
-</p><br><h3>2. Responsabilidades del Usuario</h3><ul>
+Si necesitas ayuda, reportar errores o solicitar la eliminación de datos,
+puedes comunicarte mediante:
+</p><br><p><strong>📧 Correo:</strong> soporteimperiumcorebot@gmail.com</p>
+<p><strong>💬 Discord:</strong> Servidor oficial de soporte.</p></div><div class="card"><h2>Términos de Servicio</h2><p><strong>Última actualización:</strong> 9 de junio de 2026</p><br><ul>
 <li>Cumplir los términos y políticas de Discord.</li>
 <li>No abusar de las funciones del bot.</li>
-<li>No intentar explotar vulnerabilidades.</li>
+<li>No explotar errores o vulnerabilidades.</li>
 <li>No utilizar el bot para actividades ilegales.</li>
-</ul><br><h3>3. Disponibilidad</h3><p>
-El servicio se proporciona "tal cual" y puede modificarse,
-interrumpirse o actualizarse en cualquier momento.
-</p><br><h3>4. Restricción de Acceso</h3><p>
-El acceso podrá limitarse a usuarios o servidores que incumplan estos términos.
-</p><br><h3>5. Limitación de Responsabilidad</h3><p>
-El desarrollador no será responsable por daños, pérdidas de datos
-o interrupciones derivadas del uso del bot.
-</p><br><h3>6. Cambios en los Términos</h3><p>
-Los presentes términos pueden modificarse en cualquier momento.
-</p></div><div class="card"><h2>Política de Privacidad</h2><p><strong>Última actualización:</strong> 9 de junio de 2026</p><br><h3>Información recopilada</h3><ul>
+<li>El acceso podrá restringirse por incumplimiento de estas normas.</li>
+</ul></div><div class="card"><h2>Política de Privacidad</h2><p><strong>Información almacenada:</strong></p><ul>
 <li>IDs de usuarios.</li>
 <li>IDs de servidores.</li>
-<li>IDs de canales y roles.</li>
-<li>Datos de economía y progreso.</li>
 <li>Configuraciones personalizadas.</li>
-<li>Datos necesarios para sistemas de moderación.</li>
-</ul><br><h3>Uso de los datos</h3><ul>
-<li>Funcionamiento del bot.</li>
-<li>Guardado de estadísticas.</li>
-<li>Configuración de servidores.</li>
-<li>Mejora del servicio.</li>
-</ul><br><h3>Compartición de datos</h3><p>
-Imperium Core no vende ni comparte información con terceros,
-excepto cuando sea requerido por ley.
-</p><br><h3>Conservación de datos</h3><p>
-Los datos se conservarán mientras sean necesarios para el
-funcionamiento del bot o hasta que se solicite su eliminación.
-</p><br><h3>Solicitud de eliminación</h3><p>
-Las solicitudes de eliminación de datos pueden realizarse enviando un correo a:
-</p><p>
+<li>Datos económicos y estadísticas.</li>
+<li>Información necesaria para la moderación.</li>
+</ul><br><p>
+Los datos se utilizan exclusivamente para el funcionamiento de Imperium Core
+y no son vendidos ni compartidos con terceros, salvo obligación legal.
+</p><br><p>
+Las solicitudes de eliminación de datos pueden realizarse mediante:
 <strong>soporteimperiumcorebot@gmail.com</strong>
 </p></div><div class="card"><h2>Enlaces Oficiales</h2><ul>
 <li><a href="https://discord.com/terms" target="_blank">Términos de Discord</a></li>
 <li><a href="https://discord.com/privacy" target="_blank">Política de Privacidad de Discord</a></li>
 </ul></div></div><footer><p>
-© 2026 Imperium Core. Todos los derechos reservados.
+© <span id="year"></span> Imperium Core. Todos los derechos reservados.
+</p><p>
+Desarrollado por <strong>GBRL-BD</strong>.
 </p><br><p>
 Imperium Core fue desarrollado utilizando la aplicación
 <strong>Bot Creator For Discord</strong> de <strong>Ketsuna</strong>.
 </p><p>
-Este proyecto agradece a la comunidad y al equipo de desarrollo de
-Bot Creator For Discord por proporcionar las herramientas que hicieron
-posible la creación y mantenimiento de este bot.
-</p><br><p>
-📱 Aplicación:
-<a href="https://play.google.com/store/search?q=Bot+Creator+For+Discord&c=apps"
-target="_blank">
+📱
+<a href="https://play.google.com/store/search?q=Bot+Creator+For+Discord&c=apps" target="_blank">
 Bot Creator For Discord
 </a>
 </p><p>
-🌐 Sitio Web:
-<a href="https://bot-creator.fr/"
-target="_blank">
+🌐
+<a href="https://bot-creator.fr/" target="_blank">
 bot-creator.fr
 </a>
 </p><p>
-💬 Servidor Oficial:
-<a href="https://discord.gg/gyEGNBUZdA"
-target="_blank">
-Unirse al servidor oficial de Bot Creator For Discord
+💬
+<a href="https://discord.gg/gyEGNBUZdA" target="_blank">
+Servidor Oficial de Bot Creator For Discord
 </a>
 </p><br><small>
-Imperium Core es un proyecto independiente y no está afiliado oficialmente con
-Discord, Ketsuna ni Bot Creator For Discord.
-</small></footer>
+Imperium Core es un proyecto independiente y no está afiliado oficialmente con Discord,
+Ketsuna ni Bot Creator For Discord.
+</small></footer><script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script></body>
+  </html>
